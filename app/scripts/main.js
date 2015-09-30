@@ -14,7 +14,6 @@ $('.js-submit-button').on('click', function(){
 
 
   console.log(allData.fetch());
-
   allData.on('add', MovieData);
 
 
@@ -31,6 +30,6 @@ function MovieData(output){
   //console.log(context)
   var li = $(JST.data(context));
   $('.data').append(li);
-},2000);
+  },2000);
  }
 });
